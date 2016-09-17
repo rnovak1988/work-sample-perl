@@ -1,0 +1,56 @@
+
+=head1 NAME
+
+Interview::WorkSample - Sample of setting up a simple CPAN style module
+
+
+=head1 SYNOPSIS
+
+    use Interview::WorkSample;
+
+        # Number of test-cases expected to be run
+    my $work_sample = Interview::WorkSample->new(<num_test_cases>);
+        
+        # Test case consists of two lines of input
+    my $test_case = $work_sample->Parse(<line-1>, <line-2>);
+
+    my $result = $work_sample->Solution($test_case);
+
+=head1 DESCRIPTION
+
+This project is intended to be a work-sample test for a perl programming
+and software-develoer-in-test position. 
+
+The actual code revolves around a problem available at https://www.hackerrank.com/challenges/angry-professor
+
+=head2 METHODS
+
+=over 12
+
+=item C<new>
+
+creates an encapsulated object containing the number of test cases expected to be run (needless information)
+
+=item C<Parse>
+
+Parse and return an object representing all the information relevant to this test case. How this is parsed
+is described from the problem description
+
+=item C<Solution>
+
+Calculate the solution given an object representing all of the invormation relevant to this test case (
+as generated/created by the C<Parse> function.
+
+=back
+
+=head1 LICENSE
+
+This project is licensed under the Apache License. See L<LICENSE>.
+
+=head1 AUTHOR
+
+Robert Novak L<mailto:me@robert-novak.com>
+
+=cut
+
+
