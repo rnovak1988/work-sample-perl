@@ -54,7 +54,7 @@ sub Parse($$$) {
     die "Number of students doesn't match expected input" if scalar @data != ($test_case->{N} + 0);
 
         # if get to this point, all the data lines up, so just assign the value to the internal array
-    $test_case->{arrival_time} = @data;
+    $test_case->{arrival_time} = [@data];
 
         # and finally return it
     return $test_case;
@@ -76,18 +76,18 @@ sub Solution($$) {
         not defined $test_case->{arrival_time} or
         ref $test_case->{arrival_time} ne 'ARRAY';
 
-    my ($i, $limit, $count) = (0, scalar $test_case->{arrival_time}, 0);
+    my ($i, $limit, $count) = (0, scalar @{$test_case->{arrival_time}}, 0);
 
     while ($i < $limit) {
         
-        if (($test_case->{arrival_time}[$i] + 0) <= 0) {
+        if (($test_case->{arrival_time}->[$i] + 0) <= 0) {
             $count += 1;
         }
 
         $i += 1;
     }
 
-    return ($count >= ($test_case->{K} + 0));
+    return ($count < ($test_case->{K} + 0));
 }
 
 
