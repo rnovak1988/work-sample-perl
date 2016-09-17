@@ -2,4 +2,17 @@
 
 use Interview::WorkSample;
 
+my $work_sample = Interview::WorkSample->new(chomp(readline()) + 0);
+
+my $i = 0;
+
+while ($i < $work_sample->{T}) {
+    my $test_case = $work_sample->Parse(readline(), readline());
+    if ($work_sample->Solution($test_case)) {
+        print "YES";
+    } else {
+        print "NO";
+    }
+    print "\n";
+}
 
