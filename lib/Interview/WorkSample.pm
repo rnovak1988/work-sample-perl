@@ -48,7 +48,7 @@ sub Parse($$$) {
     ($test_case->{N}, $test_case->{K}) = split(/ /, $line_one);
 
         # The second line should contain N space separated integers
-    @data = split(/ /, $line_two);
+    my @data = split(/ /, $line_two);
 
         # need to assert that this is the case
     die "Number of students doesn't match expected input" if scalar @data != ($test_case->{N} + 0);
@@ -70,7 +70,7 @@ and produces a boolean result (1 or 0)
 sub Solution($$) {
     my ($package, $test_case) = @_;
     
-    die "Data in wrong format" if not defined $test_cases or
+    die "Data in wrong format" if not defined $test_case or
         not defined $test_case->{N} or
         not defined $test_case->{K} or
         not defined $test_case->{arrival_time} or
