@@ -19,9 +19,29 @@ Interview::WorkSample - Sample of setting up a simple CPAN style module
 =head1 DESCRIPTION
 
 This project is intended to be a work-sample test for a perl programming
-and software-develoer-in-test position. 
+and software-develoer-in-test position. Please find the description of the problem
+being solved below, as well as the description of the expected tasks for each position
 
 The actual code revolves around a problem available at https://www.hackerrank.com/challenges/angry-professor
+
+=head2 TASKS
+
+For the purpose of completing the work-sample test, please complete the task as described for the position
+for which you applied
+
+=head3 SOFTWARE DEVELOPER
+
+The current abstractions (as described in L<#METHODS>) for this problem set are sub-optimal, and don't really
+model the problem as concretely as it could, not to mention it mixes aspects of program input (i.e. parsing 
+user input) with the actual solution.
+
+Your task is to refine this model and come up with a better set of abstractions, along with updating the
+appropriate unit/integration tests as found in the t/ directory.
+
+
+=head3 SOFTWARE DEVELOPER IN TEST
+
+Despite 
 
 =head2 METHODS
 
