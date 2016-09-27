@@ -41,7 +41,9 @@ appropriate unit/integration tests as found in the t/ directory.
 
 =head3 SOFTWARE DEVELOPER IN TEST
 
-Despite 
+Despite the current abstractions being sub-optimal, your task will be to write unit/integration tests
+to exercise the logic within the methods described below, their overall integration together, and to
+document any failure modes or test-cases that you deem appropriate.
 
 =head2 METHODS
 
