@@ -69,9 +69,9 @@ as generated/created by the C<Parse> function.
 
 This project is licensed under the Apache License. See L<LICENSE>.
 
-=head1 AUTHOR
+=head1 AUTHOR>
 
-Robert Novak L<mailto:me@robert-novak.com>
+L<Robert Novak|mailto:robertn@ccbill.com>
 
 =cut
 
